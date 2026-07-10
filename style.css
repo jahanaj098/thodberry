@@ -26,6 +26,11 @@ body {
   letter-spacing: 4px;
 }
 
+.logo a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
 .nav a {
   color: #f5f5f5;
   text-decoration: none;
@@ -63,7 +68,6 @@ body {
 /* SECTIONS */
 .section {
   padding: 100px 20%;
-  text clearly spaced;
 }
 
 .section h2 {
@@ -76,6 +80,7 @@ body {
   font-size: 16px;
   max-width: 600px;
   opacity: 0.85;
+  margin-bottom: 16px;
 }
 
 .dark {
@@ -107,12 +112,64 @@ body {
   letter-spacing: 1px;
 }
 
+.contact-email a {
+  color: #f5f5f5;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.4);
+  transition: opacity 0.2s ease;
+}
+
+.contact-email a:hover {
+  opacity: 0.7;
+}
+
+/* LEGAL PAGES (Terms, Refund, Privacy) */
+.section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  opacity: 0.95;
+}
+
+.section p strong {
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.section p a {
+  color: #f5f5f5;
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.section p a:hover {
+  opacity: 1;
+}
+
 /* FOOTER */
 footer {
   padding: 40px;
   text-align: center;
   font-size: 14px;
   opacity: 0.5;
+}
+
+.footer-links {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.footer-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin: 0 8px;
+  opacity: 0.8;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 /* RESPONSIVE */
@@ -127,5 +184,9 @@ footer {
 
   .nav nav {
     display: none;
+  }
+
+  .section h3 {
+    font-size: 19px;
   }
 }
